@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KV Associates - Financial Services</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#C9A560", secondary: "#2F3E46" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', serif;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #FAF9F6;
+      }
+      .hero-section {
+        position: relative;
+      }
+      .hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to right, #FAF9F6 30%, transparent);
+        z-index: 1;
+      }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+      .btn-glow:hover {
+        box-shadow: 0 0 20px rgba(201, 165, 96, 0.4);
+      }
+      .service-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(201, 165, 96, 0.1);
+      }
+      .hero-section {
+      background-image: url('https://readdy.ai/api/search-image?query=modern%20financial%20district%20with%20skyscrapers%20and%20blue%20sky%2C%20gradient%20blue%20to%20white%20from%20right%20to%20left%2C%20clean%20minimal%20design%2C%20professional%20atmosphere%2C%20soft%20lighting%2C%20perfect%20for%20financial%20services%20website%20hero%20background%2C%20empty%20space%20on%20left%20side%20for%20text&width=1920&height=800&seq=1&orientation=landscape');
+      background-size: cover;
+      background-position: center right;
+      }
+      .testimonial-card {
+      transition: transform 0.3s ease;
+      }
+      .testimonial-card:hover {
+      transform: translateY(-5px);
+      }
+      .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+      .chatbot-container {
+      transition: height 0.3s ease, opacity 0.3s ease;
+      }
+      input:focus, textarea:focus {
+      outline: none;
+      border-color: #1e40af;
+      }
+      .custom-checkbox {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #cbd5e1;
+      border-radius: 4px;
+      outline: none;
+      cursor: pointer;
+      position: relative;
+      }
+      .custom-checkbox:checked {
+      background-color: #1e40af;
+      border-color: #1e40af;
+      }
+      .custom-checkbox:checked::after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 7px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- Header -->
+    <header
+      class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm shadow-sm z-50"
+    >
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-3xl font-['Playfair_Display'] text-primary"
+          >logo</a
+        >
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a
+            href="#"
+            class="text-gray-900 font-medium hover:text-primary transition-colors"
+            >Home</a
+          >
+          <a href="#" class="text-gray-600 hover:text-primary transition-colors"
+            >About Us</a
+          >
+          <a href="#" class="text-gray-600 hover:text-primary transition-colors"
+            >Loan Services</a
+          >
+          <a href="#" class="text-gray-600 hover:text-primary transition-colors"
+            >Partners</a
+          >
+          <a href="#" class="text-gray-600 hover:text-primary transition-colors"
+            >Testimonials</a
+          >
+          <a href="#" class="text-gray-600 hover:text-primary transition-colors"
+            >Blog</a
+          >
+          <a href="#" class="text-gray-600 hover:text-primary transition-colors"
+            >Contact</a
+          >
+        </nav>
+        <div class="flex items-center space-x-4">
+          <button
+            class="hidden md:block bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-primary/90 transition-colors whitespace-nowrap"
+          >
+            Get Consultation
+          </button>
+          <button
+            class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700"
+            id="mobileMenuButton"
+          >
+            <i class="ri-menu-line ri-lg"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Navigation -->
+      <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+        <div class="container mx-auto px-4 py-2">
+          <nav class="flex flex-col space-y-3 py-3">
+            <a
+              href="#"
+              class="text-gray-900 font-medium py-2 hover:text-primary transition-colors"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 py-2 hover:text-primary transition-colors"
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 py-2 hover:text-primary transition-colors"
+              >Loan Services</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 py-2 hover:text-primary transition-colors"
+              >Partners</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 py-2 hover:text-primary transition-colors"
+              >Testimonials</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 py-2 hover:text-primary transition-colors"
+              >Blog</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 py-2 hover:text-primary transition-colors"
+              >Contact</a
+            >
+            <button
+              class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-primary/90 transition-colors whitespace-nowrap self-start mt-2"
+            >
+              Get Consultation
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-section pt-28 md:pt-32 pb-16 md:pb-24">
+      <div class="container mx-auto px-4 w-full">
+        <div class="max-w-xl hero-content">
+          <h1
+            class="text-3xl md:text-5xl font-bold text-secondary mb-4 leading-tight"
+          >
+            Elevating Your Financial Journey with Excellence
+          </h1>
+          <p class="text-lg text-gray-700 mb-8">
+            Expert loan advisory services to help individuals and businesses
+            achieve their financial goals with confidence.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button
+              class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-primary/90 transition-colors whitespace-nowrap btn-glow"
+            >
+              Get Consultation
+            </button>
+            <button
+              class="border-2 border-primary text-primary px-8 py-3 !rounded-button font-medium hover:bg-primary/5 transition-colors whitespace-nowrap"
+            >
+              Explore Services
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- USP Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Why Choose KV Associates
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            We deliver exceptional financial services with a focus on
+            transparency, efficiency, and personalized solutions.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded shadow-sm service-card">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="ri-shield-check-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+              Trusted Expertise
+            </h3>
+            <p class="text-gray-600">
+              Over 15 years of experience in financial services with a proven
+              track record of successful client partnerships.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded shadow-sm service-card">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="ri-funds-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+              Tailored Solutions
+            </h3>
+            <p class="text-gray-600">
+              Customized financial strategies designed to meet your specific
+              needs, goals, and circumstances.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded shadow-sm service-card">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="ri-customer-service-2-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+              Dedicated Support
+            </h3>
+            <p class="text-gray-600">
+              Personalized assistance throughout your financial journey with
+              responsive communication and guidance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Loan Services -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Our Loan Services
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Comprehensive financial solutions designed to meet diverse needs of
+            individuals and businesses.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="bg-white border border-gray-100 rounded shadow-sm p-6 service-card"
+          >
+            <div
+              class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4"
+            >
+              <i class="ri-home-4-line ri-lg text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Home Loans</h3>
+            <p class="text-gray-600 mb-4">
+              Flexible financing options to help you purchase your dream home
+              with competitive interest rates.
+            </p>
+            <a href="#" class="text-primary font-medium flex items-center">
+              Learn More
+              <i class="ri-arrow-right-line ml-1"></i>
+            </a>
+          </div>
+          <div
+            class="bg-white border border-gray-100 rounded shadow-sm p-6 service-card"
+          >
+            <div
+              class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4"
+            >
+              <i class="ri-building-line ri-lg text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">LAP</h3>
+            <p class="text-gray-600 mb-4">
+              Loan Against Property with attractive terms and minimal
+              documentation requirements.
+            </p>
+            <a href="#" class="text-primary font-medium flex items-center">
+              Learn More
+              <i class="ri-arrow-right-line ml-1"></i>
+            </a>
+          </div>
+          <div
+            class="bg-white border border-gray-100 rounded shadow-sm p-6 service-card"
+          >
+            <div
+              class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4"
+            >
+              <i class="ri-store-2-line ri-lg text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">SME Loans</h3>
+            <p class="text-gray-600 mb-4">
+              Specialized financing solutions for small and medium enterprises
+              to fuel growth and expansion.
+            </p>
+            <a href="#" class="text-primary font-medium flex items-center">
+              Learn More
+              <i class="ri-arrow-right-line ml-1"></i>
+            </a>
+          </div>
+          <div
+            class="bg-white border border-gray-100 rounded shadow-sm p-6 service-card"
+          >
+            <div
+              class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4"
+            >
+              <i class="ri-briefcase-4-line ri-lg text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">MSME Loans</h3>
+            <p class="text-gray-600 mb-4">
+              Government-backed financing programs designed specifically for
+              micro, small, and medium enterprises.
+            </p>
+            <a href="#" class="text-primary font-medium flex items-center">
+              Learn More
+              <i class="ri-arrow-right-line ml-1"></i>
+            </a>
+          </div>
+          <div
+            class="bg-white border border-gray-100 rounded shadow-sm p-6 service-card"
+          >
+            <div
+              class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4"
+            >
+              <i class="ri-graduation-cap-line ri-lg text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              Education Loans
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Affordable financing options for higher education with flexible
+              repayment terms.
+            </p>
+            <a href="#" class="text-primary font-medium flex items-center">
+              Learn More
+              <i class="ri-arrow-right-line ml-1"></i>
+            </a>
+          </div>
+          <div
+            class="bg-white border border-gray-100 rounded shadow-sm p-6 service-card"
+          >
+            <div
+              class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4"
+            >
+              <i class="ri-building-4-line ri-lg text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              Project Financing
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Comprehensive funding solutions for large-scale projects with
+              structured payment plans.
+            </p>
+            <a href="#" class="text-primary font-medium flex items-center">
+              Learn More
+              <i class="ri-arrow-right-line ml-1"></i>
+            </a>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <a href="#" class="inline-flex items-center text-primary font-medium">
+            View All Services
+            <i class="ri-arrow-right-line ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Partners Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Our Trusted Partners
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            We collaborate with leading financial institutions to provide you
+            with the best solutions.
+          </p>
+        </div>
+        <div class="mb-8">
+          <div class="flex justify-center space-x-4 mb-8">
+            <button
+              class="px-6 py-2 bg-primary text-white !rounded-full font-medium whitespace-nowrap"
+              id="banksTab"
+            >
+              Banks
+            </button>
+            <button
+              class="px-6 py-2 bg-gray-200 text-gray-700 !rounded-full font-medium whitespace-nowrap"
+              id="nbfcsTab"
+            >
+              NBFCs
+            </button>
+          </div>
+          <div
+            id="banksContent"
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6"
+          >
+            <div
+              class="bg-white p-6 rounded shadow-sm flex items-center justify-center h-24"
+            >
+              <div class="flex items-center">
+                <div class="w-8 h-8 flex items-center justify-center mr-2">
+                  <i class="ri-bank-fill ri-lg text-gray-700"></i>
+                </div>
+                <span class="font-medium text-gray-800">HDFC Bank</span>
+              </div>
+            </div>
+            <div
+              class="bg-white p-6 rounded shadow-sm flex items-center justify-center h-24"
+            >
+              <div class="flex items-center">
+                <div class="w-8 h-8 flex items-center justify-center mr-2">
+                  <i class="ri-bank-fill ri-lg text-gray-700"></i>
+                </div>
+                <span class="font-medium text-gray-800">ICICI Bank</span>
+              </div>
+            </div>
+            <div
+              class="bg-white p-6 rounded shadow-sm flex items-center justify-center h-24"
+            >
+              <div class="flex items-center">
+                <div class="w-8 h-8 flex items-center justify-center mr-2">
+                  <i class="ri-bank-fill ri-lg text-gray-700"></i>
+                </div>
+                <span class="font-medium text-gray-800">Axis Bank</span>
+              </div>
+            </div>
+            <div
+              class="bg-white p-6 rounded shadow-sm flex items-center justify-center h-24"
+            >
+              <div class="flex items-center">
+                <div class="w-8 h-8 flex items-center justify-center mr-2">
+                  <i class="ri-bank-fill ri-lg text-gray-700"></i>
+                </div>
+                <span class="font-medium text-gray-800">SBI</span>
+              </div>
+            </div>
+            <div
+              class="bg-white p-6 rounded shadow-sm flex items-center justify-center h-24"
+            >
+              <div class="flex items-center">
+                <div class="w-8 h-8 flex items-center justify-center mr-2">
+                  <i class="ri-bank-fill ri-lg text-gray-700"></i>
+                </div>
+                <span class="font-medium text-gray-800">Kotak Bank</span>
+              </div>
+            </div>
+          </div>
+          <div
+            id="nbfcsContent"
+            class="hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6"
+          >
+            <div
+              class="bg-white p-6 rounded shadow-sm flex items-center justify-center h-24"
+            >
+              <div class="flex items-center">
+                <div class="w-8 h-8 flex items-center justify-center mr-2">
+                  <i class="ri-building-fill ri-lg text-gray-700"></i>
+                </div>
+                <span class="font-medium text-gray-800">Bajaj Finserv</span>
+              </div>
+            </div>
+            <div
+              class="bg-white p-6 rounded shadow-sm flex items-center justify-center h-24"
+            >
+              <div class="flex items-center">
+                <div class="w-8 h-8 flex items-center justify-center mr-2">
+                  <i class="ri-building-fill ri-lg text-gray-700"></i>
+                </div>
+                <span class="font-medium text-gray-800">HDFC Ltd</span>
+              </div>
+            </div>
+            <div
+              class="bg-white p-6 rounded shadow-sm flex items-center justify-center h-24"
+            >
+              <div class="flex items-center">
+                <div class="w-8 h-8 flex items-center justify-center mr-2">
+                  <i class="ri-building-fill ri-lg text-gray-700"></i>
+                </div>
+                <span class="font-medium text-gray-800">Tata Capital</span>
+              </div>
+            </div>
+            <div
+              class="bg-white p-6 rounded shadow-sm flex items-center justify-center h-24"
+            >
+              <div class="flex items-center">
+                <div class="w-8 h-8 flex items-center justify-center mr-2">
+                  <i class="ri-building-fill ri-lg text-gray-700"></i>
+                </div>
+                <span class="font-medium text-gray-800">Aditya Birla</span>
+              </div>
+            </div>
+            <div
+              class="bg-white p-6 rounded shadow-sm flex items-center justify-center h-24"
+            >
+              <div class="flex items-center">
+                <div class="w-8 h-8 flex items-center justify-center mr-2">
+                  <i class="ri-building-fill ri-lg text-gray-700"></i>
+                </div>
+                <span class="font-medium text-gray-800">Edelweiss</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            What Our Clients Say
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Hear from our satisfied clients about their experience working with
+            KV Associates.
+          </p>
+        </div>
+        <div class="relative">
+          <div
+            class="flex overflow-x-auto pb-8 -mx-4 px-4 space-x-6 hide-scrollbar"
+            id="testimonialSlider"
+          >
+            <div
+              class="testimonial-card bg-white border border-gray-100 rounded-lg p-6 shadow-sm min-w-[300px] max-w-sm flex-shrink-0"
+            >
+              <div class="flex items-center mb-4">
+                <div class="text-amber-400 flex">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-6">
+                "KV Associates helped me secure a home loan with excellent
+                terms. Their expertise and guidance throughout the process was
+                invaluable. Highly recommended!"
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="ri-user-3-fill text-gray-500"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-900">Rajesh Mehta</h4>
+                  <p class="text-sm text-gray-500">Mumbai, Maharashtra</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="testimonial-card bg-white border border-gray-100 rounded-lg p-6 shadow-sm min-w-[300px] max-w-sm flex-shrink-0"
+            >
+              <div class="flex items-center mb-4">
+                <div class="text-amber-400 flex">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-6">
+                "As a small business owner, I was struggling to find the right
+                financing solution. KV Associates understood my needs and helped
+                me secure an MSME loan that transformed my business."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="ri-user-3-fill text-gray-500"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-900">Priya Sharma</h4>
+                  <p class="text-sm text-gray-500">Bangalore, Karnataka</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="testimonial-card bg-white border border-gray-100 rounded-lg p-6 shadow-sm min-w-[300px] max-w-sm flex-shrink-0"
+            >
+              <div class="flex items-center mb-4">
+                <div class="text-amber-400 flex">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-6">
+                "The team at KV Associates provided exceptional service when I
+                needed a loan against property. Their transparent approach and
+                competitive rates made the entire process smooth."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="ri-user-3-fill text-gray-500"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-900">Vikram Singh</h4>
+                  <p class="text-sm text-gray-500">Delhi, NCR</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="testimonial-card bg-white border border-gray-100 rounded-lg p-6 shadow-sm min-w-[300px] max-w-sm flex-shrink-0"
+            >
+              <div class="flex items-center mb-4">
+                <div class="text-amber-400 flex">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-6">
+                "I approached KV Associates for an education loan for my
+                daughter's overseas studies. Their personalized approach and
+                quick processing helped us meet tight deadlines."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="ri-user-3-fill text-gray-500"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-900">Anand Patel</h4>
+                  <p class="text-sm text-gray-500">Ahmedabad, Gujarat</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center mt-6">
+            <button
+              class="w-3 h-3 rounded-full bg-primary mx-1"
+              data-slide="0"
+            ></button>
+            <button
+              class="w-3 h-3 rounded-full bg-gray-300 mx-1"
+              data-slide="1"
+            ></button>
+            <button
+              class="w-3 h-3 rounded-full bg-gray-300 mx-1"
+              data-slide="2"
+            ></button>
+            <button
+              class="w-3 h-3 rounded-full bg-gray-300 mx-1"
+              data-slide="3"
+            ></button>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <a
+            href="#"
+            class="inline-block bg-white border border-gray-300 text-gray-800 px-6 py-3 !rounded-button font-medium hover:bg-gray-50 transition-colors whitespace-nowrap"
+            >View All Testimonials</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Financial Insights
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Stay informed with our latest articles, guides, and financial
+            advice.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+            <div class="h-48 bg-gray-200 relative">
+              <img
+                src="https://readdy.ai/api/search-image?query=professional%20financial%20advisor%20explaining%20loan%20documents%20to%20client%2C%20modern%20office%20setting%2C%20bright%20lighting%2C%20clean%20minimal%20style%2C%20financial%20planning%20concept&width=600&height=400&seq=2&orientation=landscape"
+                alt="Understanding LAP"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center text-sm text-gray-500 mb-3">
+                <span>May 5, 2025</span>
+                <span class="mx-2">•</span>
+                <span>5 min read</span>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Understanding Loan Against Property: A Comprehensive Guide
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Learn everything you need to know about LAP, its benefits,
+                eligibility criteria, and how to secure the best terms.
+              </p>
+              <a href="#" class="text-primary font-medium flex items-center">
+                Read More
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+            <div class="h-48 bg-gray-200 relative">
+              <img
+                src="https://readdy.ai/api/search-image?query=small%20business%20owner%20working%20on%20laptop%20with%20financial%20documents%2C%20modern%20office%2C%20bright%20and%20clean%20environment%2C%20business%20growth%20concept&width=600&height=400&seq=3&orientation=landscape"
+                alt="MSME vs SME"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center text-sm text-gray-500 mb-3">
+                <span>April 28, 2025</span>
+                <span class="mx-2">•</span>
+                <span>4 min read</span>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                MSME vs SME Loans: Which is Right for Your Business?
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Explore the key differences between MSME and SME loans to
+                determine the best financing option for your business needs.
+              </p>
+              <a href="#" class="text-primary font-medium flex items-center">
+                Read More
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+            <div class="h-48 bg-gray-200 relative">
+              <img
+                src="https://readdy.ai/api/search-image?query=young%20graduate%20looking%20at%20financial%20documents%20for%20education%20loan%2C%20modern%20university%20campus%20background%2C%20bright%20lighting%2C%20clean%20minimal%20style&width=600&height=400&seq=4&orientation=landscape"
+                alt="Education Loan Tips"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center text-sm text-gray-500 mb-3">
+                <span>April 15, 2025</span>
+                <span class="mx-2">•</span>
+                <span>6 min read</span>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                5 Essential Tips for Securing an Education Loan
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Discover practical advice and strategies to help you navigate
+                the education loan application process successfully.
+              </p>
+              <a href="#" class="text-primary font-medium flex items-center">
+                Read More
+                <i class="ri-arrow-right-line ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <a
+            href="#"
+            class="inline-block bg-white border border-gray-300 text-gray-800 px-6 py-3 !rounded-button font-medium hover:bg-gray-50 transition-colors whitespace-nowrap"
+            >View All Articles</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-12">
+          <div class="lg:w-1/2">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+            <p class="text-gray-600 mb-8">
+              Have questions about our services? Contact us today for a free
+              consultation.
+            </p>
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20"
+                    placeholder="Enter your email"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="phone"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+              <div>
+                <label
+                  for="service"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Service Interest</label
+                >
+                <div class="relative">
+                  <select
+                    id="service"
+                    class="w-full px-4 py-3 border border-gray-300 rounded appearance-none pr-8 focus:ring-2 focus:ring-primary/20"
+                  >
+                    <option value="" selected disabled>Select a service</option>
+                    <option value="home-loan">Home Loan</option>
+                    <option value="lap">Loan Against Property</option>
+                    <option value="sme">SME Loan</option>
+                    <option value="msme">MSME Loan</option>
+                    <option value="education">Education Loan</option>
+                    <option value="project">Project Financing</option>
+                  </select>
+                  <div
+                    class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none"
+                  >
+                    <i class="ri-arrow-down-s-line text-gray-400"></i>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-3 border border-gray-300 rounded resize-none focus:ring-2 focus:ring-primary/20"
+                  placeholder="Tell us about your requirements"
+                ></textarea>
+              </div>
+              <div class="flex items-center">
+                <input type="checkbox" id="consent" class="custom-checkbox" />
+                <label for="consent" class="ml-3 text-sm text-gray-600"
+                  >I consent to KV Associates processing my personal data in
+                  accordance with the
+                  <a href="#" class="text-primary">Privacy Policy</a>.</label
+                >
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-primary/90 transition-colors whitespace-nowrap"
+                >
+                  Submit Request
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="lg:w-1/2">
+            <div class="bg-gray-50 p-8 rounded-lg h-full">
+              <h3 class="text-xl font-semibold text-gray-900 mb-6">
+                Contact Information
+              </h3>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0"
+                  >
+                    <i class="ri-map-pin-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-900 mb-1">
+                      Office Address
+                    </h4>
+                    <p class="text-gray-600">
+                      1201, Horizon Tower, Sector 43, Gurugram, Haryana 122002,
+                      India
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0"
+                  >
+                    <i class="ri-phone-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-900 mb-1">Phone Number</h4>
+                    <p class="text-gray-600">+91 98765 43210</p>
+                    <p class="text-gray-600">+91 11234 56789</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0"
+                  >
+                    <i class="ri-mail-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-900 mb-1">
+                      Email Address
+                    </h4>
+                    <p class="text-gray-600">info@kvassociates.com</p>
+                    <p class="text-gray-600">support@kvassociates.com</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0"
+                  >
+                    <i class="ri-time-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-900 mb-1">
+                      Business Hours
+                    </h4>
+                    <p class="text-gray-600">
+                      Monday - Friday: 9:00 AM - 6:00 PM
+                    </p>
+                    <p class="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
+                    <p class="text-gray-600">Sunday: Closed</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h4 class="font-medium text-gray-900 mb-4">Connect With Us</h4>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm hover:bg-gray-50"
+                  >
+                    <i class="ri-facebook-fill text-blue-600"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm hover:bg-gray-50"
+                  >
+                    <i class="ri-twitter-fill text-blue-400"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm hover:bg-gray-50"
+                  >
+                    <i class="ri-linkedin-fill text-blue-700"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm hover:bg-gray-50"
+                  >
+                    <i class="ri-instagram-fill text-pink-600"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm hover:bg-gray-50"
+                  >
+                    <i class="ri-whatsapp-fill text-green-500"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="mt-8 h-64 bg-gray-200 rounded overflow-hidden">
+                <img
+                  src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png"
+                  alt="Office Location Map"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <a
+              href="#"
+              class="text-3xl font-['Pacifico'] text-white mb-6 inline-block"
+              >logo</a
+            >
+            <p class="text-gray-400 mb-6">
+              KV Associates is a leading financial services firm providing
+              comprehensive loan solutions to individuals and businesses across
+              India.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Loan Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Partners</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Our Services</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Home Loans</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Loan Against Property</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >SME Loans</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >MSME Loans</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Education Loans</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Project Financing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >CGTMSE Loans</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Newsletter</h4>
+            <p class="text-gray-400 mb-4">
+              Subscribe to our newsletter for the latest updates and financial
+              insights.
+            </p>
+            <form class="mb-4">
+              <div class="flex">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-l text-white focus:outline-none focus:border-primary"
+                />
+                <button
+                  type="submit"
+                  class="bg-primary px-4 py-3 rounded-r text-white font-medium hover:bg-primary/90 transition-colors whitespace-nowrap"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Payment Partners</h4>
+              <div class="flex space-x-4">
+                <i class="ri-visa-fill text-2xl text-gray-400"></i>
+                <i class="ri-mastercard-fill text-2xl text-gray-400"></i>
+                <i class="ri-paypal-fill text-2xl text-gray-400"></i>
+                <i class="ri-bank-card-fill text-2xl text-gray-400"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm mb-4 md:mb-0">
+              © 2025 KV Associates. All rights reserved.
+            </p>
+            <div class="flex space-x-6">
+              <a
+                href="#"
+                class="text-gray-400 text-sm hover:text-white transition-colors"
+                >Privacy Policy</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 text-sm hover:text-white transition-colors"
+                >Terms of Service</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 text-sm hover:text-white transition-colors"
+                >Sitemap</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Sticky Elements -->
+    <div class="fixed right-6 bottom-24 z-40 flex flex-col space-y-4">
+      <a
+        href="#"
+        class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white shadow-lg hover:bg-primary/90 transition-colors"
+      >
+        <i class="ri-whatsapp-fill ri-lg"></i>
+      </a>
+      <button
+        id="chatbotToggle"
+        class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white shadow-lg hover:bg-primary/90 transition-colors"
+      >
+        <i class="ri-message-3-fill ri-lg"></i>
+      </button>
+    </div>
+    <!-- Back to Top -->
+    <button
+      id="backToTop"
+      class="fixed right-6 bottom-6 w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-gray-700 transition-colors z-40 opacity-0 invisible"
+    >
+      <i class="ri-arrow-up-line ri-lg"></i>
+    </button>
+    <!-- Chatbot -->
+    <div
+      id="chatbot"
+      class="fixed right-6 bottom-24 z-40 w-80 bg-white rounded-lg shadow-xl overflow-hidden transition-all duration-300 opacity-0 invisible chatbot-container"
+    >
+      <div class="bg-primary text-white p-4 flex justify-between items-center">
+        <div class="flex items-center">
+          <div
+            class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-3"
+          >
+            <i class="ri-customer-service-2-fill"></i>
+          </div>
+          <div>
+            <h3 class="font-medium">KV Associates</h3>
+            <p class="text-xs text-white/80">Online now</p>
+          </div>
+        </div>
+        <button id="closeChatbot" class="text-white/80 hover:text-white">
+          <i class="ri-close-line ri-lg"></i>
+        </button>
+      </div>
+      <div class="p-4 h-80 overflow-y-auto bg-gray-50" id="chatMessages">
+        <div class="flex mb-4">
+          <div
+            class="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center mr-2 flex-shrink-0"
+          >
+            <i class="ri-customer-service-2-fill text-primary text-sm"></i>
+          </div>
+          <div class="bg-white p-3 rounded-lg shadow-sm max-w-[85%]">
+            <p class="text-gray-800 text-sm">
+              Hello! Welcome to KV Associates. How can I assist you today?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 border-t">
+        <div class="grid grid-cols-1 gap-2">
+          <button
+            class="bg-gray-100 text-gray-800 p-3 rounded text-sm text-left hover:bg-gray-200 transition-colors"
+            onclick="sendChatbotOption('Explore Loans')"
+          >
+            <i class="ri-bank-card-line mr-2 text-primary"></i> Explore Loans
+          </button>
+          <button
+            class="bg-gray-100 text-gray-800 p-3 rounded text-sm text-left hover:bg-gray-200 transition-colors"
+            onclick="sendChatbotOption('Become a Partner')"
+          >
+            <i class="ri-team-line mr-2 text-primary"></i> Become a Partner
+          </button>
+          <button
+            class="bg-gray-100 text-gray-800 p-3 rounded text-sm text-left hover:bg-gray-200 transition-colors"
+            onclick="sendChatbotOption('Request Callback')"
+          >
+            <i class="ri-phone-line mr-2 text-primary"></i> Request Callback
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById("mobileMenuButton");
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+        });
+        // Partners Tab
+        const banksTab = document.getElementById("banksTab");
+        const nbfcsTab = document.getElementById("nbfcsTab");
+        const banksContent = document.getElementById("banksContent");
+        const nbfcsContent = document.getElementById("nbfcsContent");
+        banksTab.addEventListener("click", function () {
+          banksTab.classList.add("bg-primary", "text-white");
+          banksTab.classList.remove("bg-gray-200", "text-gray-700");
+          nbfcsTab.classList.add("bg-gray-200", "text-gray-700");
+          nbfcsTab.classList.remove("bg-primary", "text-white");
+          banksContent.classList.remove("hidden");
+          nbfcsContent.classList.add("hidden");
+        });
+        nbfcsTab.addEventListener("click", function () {
+          nbfcsTab.classList.add("bg-primary", "text-white");
+          nbfcsTab.classList.remove("bg-gray-200", "text-gray-700");
+          banksTab.classList.add("bg-gray-200", "text-gray-700");
+          banksTab.classList.remove("bg-primary", "text-white");
+          nbfcsContent.classList.remove("hidden");
+          banksContent.classList.add("hidden");
+        });
+        // Back to Top
+        const backToTopButton = document.getElementById("backToTop");
+        window.addEventListener("scroll", function () {
+          if (window.pageYOffset > 300) {
+            backToTopButton.classList.remove("opacity-0", "invisible");
+            backToTopButton.classList.add("opacity-100", "visible");
+          } else {
+            backToTopButton.classList.add("opacity-0", "invisible");
+            backToTopButton.classList.remove("opacity-100", "visible");
+          }
+        });
+        backToTopButton.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+        // Chatbot Toggle
+        const chatbotToggle = document.getElementById("chatbotToggle");
+        const chatbot = document.getElementById("chatbot");
+        const closeChatbot = document.getElementById("closeChatbot");
+        chatbotToggle.addEventListener("click", function () {
+          chatbot.classList.toggle("opacity-0");
+          chatbot.classList.toggle("invisible");
+        });
+        closeChatbot.addEventListener("click", function () {
+          chatbot.classList.add("opacity-0", "invisible");
+        });
+        // Testimonial Slider
+        const testimonialSlider = document.getElementById("testimonialSlider");
+        const sliderDots = document.querySelectorAll("[data-slide]");
+        sliderDots.forEach((dot) => {
+          dot.addEventListener("click", function () {
+            const slideIndex = parseInt(this.getAttribute("data-slide"));
+            const slideWidth =
+              document.querySelector(".testimonial-card").offsetWidth + 24; // card width + gap
+            testimonialSlider.scrollTo({
+              left: slideWidth * slideIndex,
+              behavior: "smooth",
+            });
+            // Update active dot
+            sliderDots.forEach((d) =>
+              d.classList.replace("bg-primary", "bg-gray-300"),
+            );
+            this.classList.replace("bg-gray-300", "bg-primary");
+          });
+        });
+      });
+      // Chatbot Functions
+      function sendChatbotOption(option) {
+        const chatMessages = document.getElementById("chatMessages");
+        // Add user message
+        chatMessages.innerHTML += `
+      <div class="flex justify-end mb-4">
+      <div class="bg-primary/10 p-3 rounded-lg max-w-[85%]">
+      <p class="text-gray-800 text-sm">${option}</p>
+      </div>
+      </div>
+      `;
+        // Scroll to bottom
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+        // Simulate typing
+        setTimeout(() => {
+          let response = "";
+          if (option === "Explore Loans") {
+            response =
+              "Great! We offer various loan options including Home Loans, LAP, SME Loans, and more. What type of loan are you interested in?";
+          } else if (option === "Become a Partner") {
+            response =
+              "We're always looking for partners! Please share your contact details and our partnership team will get in touch with you shortly.";
+          } else if (option === "Request Callback") {
+            response =
+              "Sure! Please provide your name, phone number, and preferred time for a callback, and our team will contact you.";
+          }
+          // Add bot response
+          chatMessages.innerHTML += `
+      <div class="flex mb-4">
+      <div class="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center mr-2 flex-shrink-0">
+      <i class="ri-customer-service-2-fill text-primary text-sm"></i>
+      </div>
+      <div class="bg-white p-3 rounded-lg shadow-sm max-w-[85%]">
+      <p class="text-gray-800 text-sm">${response}</p>
+      </div>
+      </div>
+      `;
+          // Scroll to bottom
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>
